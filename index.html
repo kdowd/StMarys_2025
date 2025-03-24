@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+
+    <style>
+        body {
+            background-color: azure;
+            font-family: monospace !important;
+
+        }
+
+        .accordion-wrapper {
+            display: grid;
+            grid-template-columns: [content-start] minmax(400px, 0.75fr) [content-end];
+            gap: 1rem;
+            place-content: center;
+
+        }
+
+        ul li {
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="background-color: cadetblue; padding:1rem; border-radius: 12px;"><img width="364" height="68"
+            src="st-marys-logo.png" alt="st marys logo"></h1>
+    <div class="page-wrapper">
+
+        <div class="accordion-wrapper">
+            <fw-accordion expanded>
+                <fw-accordion-title>
+                    <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
+                    <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
+                    <fw-pill color="red">
+                        <fw-icon name="add-contact" slot="icon"></fw-icon>
+                        Basic HTML / CSS Usage:
+                    </fw-pill>
+
+                </fw-accordion-title>
+                <fw-accordion-body>
+                    <p>We'll spend the next 30 mins getting used to VSCode and building a simple web page.</p>
+                    <p>We will create some CSS and CSS classes and then save that code to an external CSS file.</p>
+                    <p>Finally we will link our basic web page to the external CSS. </p>
+                    <p>Doing all of the above will help prepare you for the rest of today.</p>
+                    <p>I will be sharing code with you but you'll need to have some idea where the code goes and how it
+                        relates to the page and
+                        page style.</p>
+                    <fw-toggle size="medium"></fw-toggle>
+                </fw-accordion-body>
+
+            </fw-accordion>
+
+
+            <fw-accordion>
+                <fw-accordion-title>
+                    <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
+                    <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
+                    <fw-pill color="red">
+                        <fw-icon name="add-contact" slot="icon"></fw-icon>
+                        Start VSCode project
+                    </fw-pill>
+                </fw-accordion-title>
+                <fw-accordion-body>
+                    <ul>
+                        <li>Create Folder on your machine and give it a meaningful name. Remember where you made the
+                            folder.This
+                            folder will be your project home.</li>
+                        <li>Open VSCode and use "File > Open Folder" and navigate to the folder you just created. Or,
+                            open a VSCode window "File>New Window" and drag/drop the new folder into the center of that
+                            window.</li>
+                        <li>Either of the 2 methods will create a new project in VSCode.</li>
+                    </ul>
+                    <fw-toggle size="medium"></fw-toggle>
+                </fw-accordion-body>
+            </fw-accordion>
+
+
+
+            <fw-accordion>
+                <fw-accordion-title>
+                    <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
+                    <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
+                    <fw-pill color="blue">
+                        <fw-icon name="add-note" slot="icon"></fw-icon>
+                        HTML Content: paste between body tags
+                    </fw-pill>
+
+                </fw-accordion-title>
+                <fw-accordion-body>
+                    <xmp>
+
+
+                        <div class="container">
+                            <!-- 1 start-->
+                            <header>
+
+                            </header>
+
+                            <!-- 2 start -->
+                            <main class="content">
+                                <p>Your Content...</p>
+                            </main>
+
+                            <!-- 3 start -->
+                            <footer>
+                                <div>
+                                    <p>My Details:</p>
+                                </div>
+                                <div>
+                                    <p class="copyright">&copy; 2025</p>
+                                </div>
+                            </footer>
+                        </div>
+
+
+
+                    </xmp>
+                    <fw-toggle size="medium"></fw-toggle>
+                </fw-accordion-body>
+            </fw-accordion>
+
+            <fw-accordion>
+                <fw-accordion-title>
+                    <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
+                    <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
+                    <fw-pill color="blue">
+                        <fw-icon name="add-note" slot="icon"></fw-icon>
+                        Main Navigation Code: paste between header tags
+                    </fw-pill>
+
+                </fw-accordion-title>
+                <fw-accordion-body>
+
+                    <xmp>
+                        <nav>
+                            <ul class="primary-menu">
+                                <li style="margin-right: auto">
+                                    <div>Logo Here</div>
+                                </li>
+                                <li>
+                                    <a class="nav-button" href="#"><span>Home</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-button" href="#"><span>Contact</span></a>
+                                </li>
+                                <li class="sub-menu-wrapper" style="position: relative" aria-haspopup="true">
+                                    <a class="nav-button" href="#"><span>Blog</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-button" href="#"><span>About</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-button" href="#"><span>Meet the Team</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </xmp>
+                    <fw-toggle size="medium"></fw-toggle>
+                </fw-accordion-body>
+            </fw-accordion>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

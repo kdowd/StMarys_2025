@@ -1,0 +1,17 @@
+body {
+    background-color: azure;
+    font-family: monospace !important;
+
+}
+
+.accordion-wrapper {
+    display: grid;
+    grid-template-columns: [content-start] minmax(400px, 0.75fr) [content-end];
+    gap: 1rem;
+    place-content: center;
+
+}
+
+ul li {
+    margin-bottom: 16px;
+}

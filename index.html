@@ -23,7 +23,7 @@
                 <fw-accordion-title>
                     <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
                     <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
-                    <fw-pill color="red">
+                    <fw-pill color=blue>
                         <fw-icon name="add-contact" slot="icon"></fw-icon>
                         Basic HTML / CSS Usage:
                     </fw-pill>
@@ -54,7 +54,7 @@
                 <fw-accordion-title>
                     <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
                     <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
-                    <fw-pill color="red">
+                    <fw-pill color=blue>
                         <fw-icon name="add-contact" slot="icon"></fw-icon>
                         Start VSCode Project
                     </fw-pill>
@@ -91,7 +91,7 @@
                 <fw-accordion-title>
                     <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
                     <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
-                    <fw-pill color="red">
+                    <fw-pill color=blue>
                         <fw-icon name="add-contact" slot="icon"></fw-icon>
                         Complete index.html:
                     </fw-pill>
@@ -144,7 +144,7 @@
                 <fw-accordion-title>
                     <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
                     <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
-                    <fw-pill color="red">
+                    <fw-pill color=blue>
                         <fw-icon name="add-note" slot="icon"></fw-icon>
                         Main Navigation HTML:
                     </fw-pill>
@@ -184,7 +184,7 @@
                 <fw-accordion-title>
                     <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
                     <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
-                    <fw-pill color="red">
+                    <fw-pill color=blue>
                         <fw-icon name="add-contact" slot="icon"></fw-icon>
                         Shared (CSS) code across all pages:
                     </fw-pill>
@@ -249,7 +249,7 @@
                 <fw-accordion-title>
                     <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
                     <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
-                    <fw-pill color="red">
+                    <fw-pill color=blue>
                         <fw-icon name="add-contact" slot="icon"></fw-icon>
                         Navigation (CSS) code across all pages:
                     </fw-pill>
@@ -309,7 +309,7 @@
                 <fw-accordion-title>
                     <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
                     <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
-                    <fw-pill color="red">
+                    <fw-pill color=blue>
                         <fw-icon name="add-note" slot="icon"></fw-icon>
                         Duplicate index.html and rename:
                     </fw-pill>
@@ -337,7 +337,361 @@
                 </fw-accordion-body>
             </fw-accordion>
 
+            <fw-accordion>
+                <fw-accordion-title>
+                    <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
+                    <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
+                    <fw-pill color=red>
+                        <fw-icon name="add-note" slot="icon"></fw-icon>
+                        HELP !!!!!
+                    </fw-pill>
+                </fw-accordion-title>
+                <fw-accordion-body>
+                    <h4>All gone wrong?</h4>
+                    <p>Here's a link to a zip file:</p>
+                    <a href="https://bigunit.co.nz/StMarys_2025/site.zip">site.zip</a>
 
+                    <fw-toggle size="medium"></fw-toggle>
+                </fw-accordion-body>
+            </fw-accordion>
+
+            <!-- end of main pages code -->
+
+
+
+            <fw-accordion>
+                <fw-accordion-title>
+                    <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
+                    <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
+                    <fw-pill color=blue>
+                        <fw-icon name="add-note" slot="icon"></fw-icon>
+                        Generate custom colours:
+                    </fw-pill>
+                </fw-accordion-title>
+                <fw-accordion-body>
+                    <p>Each site needs customisation. Take five minutes and choose 4 to 6 colours from the site below,
+                        write the colours down and then add them to your site.
+                    </p>
+                    <p>Choose colours for text and for the backgrouds and for the menu/menu
+                        rollovers.</p>
+                    <p>Look at the CSS file, where you se color: or background-color you can add your own custom colour.
+                    </p>
+                    <div>
+                        <p><a href=" https://coolors.co/generate">Click For Custom Colour Generator Site</a></p>
+                    </div>
+
+                    <fw-toggle size="medium"></fw-toggle>
+                </fw-accordion-body>
+            </fw-accordion>
+
+
+            <!-- 2 col layout -->
+            <fw-accordion>
+                <fw-accordion-title>
+                    <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
+                    <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
+                    <fw-pill color=blue>
+                        <fw-icon name="add-note" slot="icon"></fw-icon>
+                        Two Column Layout:
+                    </fw-pill>
+                </fw-accordion-title>
+                <fw-accordion-body>
+                    <h4>Paste the following between the &lt;main&gt; tags.
+                    </h4>
+                    <xmp>
+                        <style>
+                            .a-grid {
+                                padding-top: 40px;
+
+                                display: grid;
+
+                                grid-template-columns: 1fr 1fr;
+
+                                place-items: center;
+
+                                gap: 30px;
+
+                                img {
+                                    object-fit: cover;
+                                    height: 200px;
+                                    aspect-ratio: 16 / 9;
+                                }
+                            }
+
+                            h1 {
+                                text-align: center;
+                            }
+                        </style>
+                        <h1>My Nice grid of things</h1>
+
+
+                        <div class="a-grid">
+                            <div>
+                                <img src="https://place-hold.it/320x200/333/ff0000/" alt="image of..." />
+                            </div>
+
+                            <div>
+                                <img src="https://place-hold.it/300x160/333/ff0000/" alt="image of..." />
+                            </div>
+                            <div>
+                                <img src="https://place-hold.it/400x260/333/ff0000/" alt="image of..." />
+                            </div>
+                            <div>
+                                <img src="https://place-hold.it/360x200/333/ff0000/" alt="image of..." />
+                            </div>
+
+                            <div>
+                                <img src="https://place-hold.it/300x160/333/ff0000/" alt="image of..." />
+                            </div>
+                            <div>
+                                <img src="https://place-hold.it/400x260/333/ff0000/" alt="image of..." />
+                            </div>
+                            <div>
+                                <img src="https://place-hold.it/300x200/333/ff0000/" alt="image of..." />
+                            </div>
+
+                            <div>
+                                <img src="https://place-hold.it/360x160/333/ff0000/" alt="image of..." />
+                            </div>
+                            <div>
+                                <img src="https://place-hold.it/400x260/333/ff0000/" alt="image of..." />
+                            </div>
+                        </div>
+                    </xmp>
+                    <fw-toggle size="medium"></fw-toggle>
+                </fw-accordion-body>
+            </fw-accordion>
+
+            <!-- modal form -->
+            <fw-accordion>
+                <fw-accordion-title>
+                    <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
+                    <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
+                    <fw-pill color=blue>
+                        <fw-icon name="add-note" slot="icon"></fw-icon>
+                        Modal Form:
+                    </fw-pill>
+                </fw-accordion-title>
+                <fw-accordion-body>
+                    <h4>Paste the following between the &lt;main&gt; tags.
+                    </h4>
+                    <xmp>
+                        <style>
+                            ::backdrop {
+                                background-image: linear-gradient(45deg, snow, rebeccapurple, dodgerblue, orangered);
+                                opacity: 0.75;
+                            }
+
+
+                            form {
+                                display: grid;
+                                grid-template-columns: 1fr;
+                                gap: 4px;
+
+                                input {
+                                    padding: 0.5rem;
+                                }
+
+                                input:invalid {
+                                    border: 2px solid red;
+                                    background-color: beige;
+                                }
+                            }
+                        </style>
+                        <button class="show-dialog">Show the dialog</button>
+                        <dialog class="dialog-one" style="position: fixed; top: 0">
+                            <button>Close</button>
+
+                            <p>Some info here etc..:</p>
+
+                            <div>
+                                <img src="https://place-hold.it/300x160/333/ff0000/" alt="nice" />
+                            </div>
+
+                            <form class="dialog-form" action="https://reqres.in/api/users" method="post">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name" required placeholder="full name:" />
+                                <hr />
+                                <label for="mail">Email:</label>
+                                <input type="email" id="mail" name="user_email" required placeholder="email:" />
+                                <hr />
+                                <label for="msg">Message:</label>
+                                <textarea id="msg" name="user_message" placeholder="optional message:"></textarea>
+                                <hr />
+
+                                <button role="submit">Submit</button>
+                            </form>
+                        </dialog>
+
+                        <script>
+                            function openTheDialog(event) {
+                                let dialogElement = document.querySelector('.dialog-one');
+
+                                dialogElement.showModal();
+                            }
+
+                            function closeTheDialog(event) {
+                                let dialogElement = document.querySelector('.dialog-one');
+
+                                dialogElement.close();
+                            }
+
+                            let openButton = document.querySelector('.show-dialog');
+
+                            if (openButton) {
+                                openButton.addEventListener('click', openTheDialog);
+                            }
+
+
+
+                            let closeButton = document.querySelector('.dialog-one > button');
+                            if (closeButton) {
+                                closeButton.addEventListener('click', closeTheDialog);
+                            }
+                        </script>
+
+                        <script>
+                            let outputData = false;
+                            let formElement = document.querySelector('.dialog-form');
+                            if (formElement && outputData) {
+                                formElement.addEventListener('submit', (e) => {
+                                    // on form submission, prevent default
+                                    e.preventDefault();
+                                    let currentForm = e.target;
+                                    // // construct a FormData object from current form,
+                                    const formData = new FormData(currentForm);
+                                    for (var pair of formData.entries()) {
+                                        console.log(pair[0], pair[1]);
+                                    }
+                                });
+                            }
+                        </script>
+                    </xmp>
+                    <fw-toggle size="medium"></fw-toggle>
+                </fw-accordion-body>
+            </fw-accordion>
+            <!-- end of modal -->
+
+
+            <!-- start drop down menu -->
+            <fw-accordion>
+                <fw-accordion-title>
+                    <fw-icon name="minus" size="14" slot="expanded-icon"></fw-icon>
+                    <fw-icon name="plus" size="14" slot="collapsed-icon"></fw-icon>
+                    <fw-pill color=blue>
+                        <fw-icon name="add-note" slot="icon"></fw-icon>
+                        Two Level Menu:
+                    </fw-pill>
+                </fw-accordion-title>
+                <fw-accordion-body>
+                    <h4>Here's the whole page for a drop down.
+                    </h4>
+                    <xmp>
+                        <!-- The navigation styles -->
+
+                        <style>
+                            .nav-button {
+                                font-family: monospace;
+                                font-size: 1.2rem;
+                                display: block;
+                                color: snow;
+                                background-color: rosybrown;
+                                text-decoration: none;
+                                padding: 0.5rem 16px;
+                                cursor: pointer;
+                                transition: background-color, color;
+                                transition-duration: 500ms;
+                            }
+
+                            .nav-button:hover {
+                                background-color: yellow;
+                                color: black;
+                            }
+
+                            .sub-menu .nav-button {
+                                /* things look better when all the same width */
+                                /* but target only sub-menu buttons */
+                                min-width: 60px;
+                            }
+
+                            header {
+                                nav {
+                                    ul {
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        align-items: center;
+                                        gap: 1rem;
+                                        list-style-type: none;
+
+                                        li:last-of-type {
+                                            padding-right: 1rem;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .sub-menu {
+                                /* background-color: red; */
+                                display: flex;
+                                align-items: flex-start;
+                                flex-direction: column;
+                                position: absolute;
+
+                                gap: 0.25rem;
+                                padding: 0.5rem 0;
+
+                                display: none;
+                            }
+
+                            .sub-menu-wrapper:hover .sub-menu {
+                                display: flex;
+                            }
+                        </style>
+
+
+                        <!-- Here's the navigation with sub menu -->
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a class="nav-button" href="#"><span>Home</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-button" href="#"><span>Contact</span></a>
+                                </li>
+                                <li class="sub-menu-wrapper" style="position: relative" aria-haspopup="true">
+                                    <a class="nav-button" href="#"><span>Blog ></span></a>
+                                    <!-- sub menu start -->
+                                    <ul class="sub-menu" aria-label="submenu">
+                                        <li>
+                                            <a class="nav-button"
+                                                href="https://www.newscientist.com/"><span>Science</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-button"
+                                                href="https://podcasts.apple.com/gb/podcast/the-rest-is-history/"><span>History</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-button"
+                                                href="https://www.sparknotes.com/lit/"><span>English</span></a>
+                                        </li>
+                                    </ul>
+                                    <!-- sub menu end -->
+                                </li>
+                                <li>
+                                    <a class="nav-button" href="#"><span>About</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-button" href="#"><span>Meet the Team</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+
+
+                    </xmp>
+                    <fw-toggle size="medium"></fw-toggle>
+                </fw-accordion-body>
+            </fw-accordion>
+            <!-- end drop down menu -->
 
         </div>
     </div>
